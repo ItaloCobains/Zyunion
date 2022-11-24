@@ -15,4 +15,4 @@ ${EXEC}: ${OBJ}
 	${CC} ${CFLAGS} $< -o $@
 
 clean:
-	rm *.o ${EXEC}
+	rm **/*.o ${EXEC}
