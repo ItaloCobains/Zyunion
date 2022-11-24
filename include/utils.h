@@ -1,5 +1,5 @@
+#ifndef ZYUNION_UTIL_H
 #define ZYUNION_UTIL_H
-#ifdef ZYUNION_UTIL_H
 
 #include <stdio.h>
 #include <stdlib.h>
