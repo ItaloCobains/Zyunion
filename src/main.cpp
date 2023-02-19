@@ -2,13 +2,13 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "../include/utils.h"
+
+#include "../include/flegua.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-	Util util;
 
 	if (argc < 2)
 	{
@@ -16,12 +16,7 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	vector<string> conteudoDoArquivo = util.devolveConteudoDoArquivo(argv[1]);
-
-	for (int i = 0; i < conteudoDoArquivo.size(); i++)
-	{
-		cout << conteudoDoArquivo[i] << endl;
-	}
+	Flegua flegua(argv[1]);
 
 	return 0;
 }

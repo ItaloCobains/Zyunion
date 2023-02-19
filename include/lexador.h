@@ -1,18 +1,30 @@
-// #ifndef ZYUNION_LEXADOR_H
-// #define ZYUNION_LEXADOR_H
+#ifndef FLEGUA_LEXADOR_H
+#define FLEGUA_LEXADOR_H
 
-// #include <vector>
-// #include <string>
+#include <vector>
+#include <string>
+#include <iostream>
 
-// class Lexador
-// {
-// public:
-// 	Lexador();
+#include "./simbolo.h"
 
-// 	void analisar();
+using namespace std;
 
-// private:
-// 	std::vector<std::string> simbolo;
-// };
+class Lexador
+{
+public:
+	Lexador();
 
-// #endif // ZYUNION_LEXADOR_H
+	ResultadoLexador analisar(vector<string> codigo, int hashArquivo);
+	bool eFinalDoCodigo();
+	void analisarToken();
+
+private:
+	vector<string> codigo;
+	ResultadoLexador resultado;
+	int inicioSimbolo;
+	int linha;
+	int atual;
+	int hashArquivo;
+};
+
+#endif // FLEGUA_LEXADOR_H

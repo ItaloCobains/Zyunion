@@ -1,5 +1,5 @@
-#ifndef ZYUNION_UTIL_H
-#define ZYUNION_UTIL_H
+#ifndef FLEGUA_UTIL_H
+#define FLEGUA_UTIL_H
 
 #include <fstream>
 #include <vector>
@@ -15,4 +15,4 @@ public:
 private:
 };
 
-#endif // ZYUNION_UTIL_H
+#endif // FLEGUA_UTIL_H
