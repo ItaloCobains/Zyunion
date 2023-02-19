@@ -1,9 +1,18 @@
 #ifndef ZYUNION_UTIL_H
 #define ZYUNION_UTIL_H
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <fstream>
+#include <vector>
 
-char *read_ascii_file(const char *path);
+using namespace std;
+
+class Util
+{
+public:
+	Util();
+	vector<string> devolveConteudoDoArquivo(string nomeDoArquivo);
+
+private:
+};
 
 #endif // ZYUNION_UTIL_H

@@ -1,10 +1,10 @@
-CC = gcc
-CFLAGS = -c -std=c99 -g 
+CC = g++
+CFLAGS = -c -std=c++17 -g 
 LDFLAGS = -g
-SRC = ${wildcard src/*.c}
+SRC = ${wildcard src/*.cpp}
 HDR = ${wildcard include/*.h}
 OBJ = ${SRC:.c=.o}
-EXEC = Zyunion
+EXEC = flegua
 
 all: ${SRC} ${OBJ} ${EXEC}
 
